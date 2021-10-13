@@ -11,6 +11,7 @@ from pathlib import Path
 from argparse import ArgumentParser
 import git
 import yaml
+import datetime
 
 class Prgtest:
     """ this class encapsulates the prgtest functionality """
@@ -323,8 +324,18 @@ class Prgtest:
         for testid, testspecs in self.specs.items():
             if testid.startswith('_'):
                 continue
-            output = self.run_target(stdin=testspecs.get('stdin'), argsin=testspecs.get('argsin'))
+            output = self.run_target(
+                stdin=Prgtest.normalize_entry_spec(testspecs.get('stdin')),
+                argsin=Prgtest.normalize_entry_spec(testspecs.get('argsin')))
             self.compare_results(testid, output)
+
+    @staticmethod
+    def normalize_entry_spec(entry):
+        """ normalizes an entry spec (i.e. the value of stdin, argsin, etc.)
+            The value of an entry spec can be a single string or a list of strings. 
+            After normalization, the result will be always a list. Even if empty.
+            In case entry is None, it returns None """
+        return entry if entry is None or isinstance(entry, list) else [entry]
 
 
     def run_target(self, stdin=None, argsin=None):
@@ -361,13 +372,16 @@ class Prgtest:
         os.chdir(self.target_path)
 
         # Prepare stdin
-        if stdin is not None:
-            stdin = '\n'.join(stdin)
+        stdin = '' if stdin is None else '\n'.join(str(item) for item in stdin)
 
-        # run the exercise
+        # Prepare command
         command_list = ['java', self.get_main()]
+
+        # Add args if any
         if argsin is not None:
             command_list.extend(argsin)
+
+        # run the exercise
         try:
             result = subprocess.run(command_list,
                                     capture_output=True,
@@ -390,7 +404,7 @@ class Prgtest:
             """ compares output with expected output as defined in specs """
             ignore_blank_lines = self.specs.get('_ignore_blank_lines', True)
             testspecs = self.specs[testid]
-            expected = testspecs.get('stdout')
+            expected = Prgtest.normalize_entry_spec(testspecs.get('stdout'))
             if expected is None:
                 return None
             result = Prgtest.compare_lines(expected, found,
@@ -569,7 +583,7 @@ class Background():
 
 # color schemas
 color_schemata = {
-    "black-over-white": {
+    "clear": {
         "FG_GENERAL_CODE": Foreground.WHITE,
         "BG_GENERAL_CODE": Background.RESET,
         "FG_EXPECTED_CODE": Foreground.GREEN,
@@ -586,8 +600,12 @@ color_schemata = {
         "BG_FAIL_TEST": Background.RED,
         "FG_JAVAC_ARGS": Foreground.CYAN,
         "BG_JAVAC_ARGS": Background.RESET,
+        "FG_WARNING": Foreground.RED,
+        "BG_WARNING": Background.RESET,
+        "FG_ERROR": Foreground.RED,
+        "BG_ERROR": Background.RESET,
     },
-    "green-over-black": {
+    "dark": {
         "FG_GENERAL_CODE": Foreground.WHITE,
         "BG_GENERAL_CODE": Background.RESET,
         "FG_EXPECTED_CODE": Foreground.GREEN,
@@ -604,16 +622,26 @@ color_schemata = {
         "BG_FAIL_TEST": Background.RED,
         "FG_JAVAC_ARGS": Foreground.YELLOW,
         "BG_JAVAC_ARGS": Background.RESET,
+        "FG_WARNING": Foreground.YELLOW,
+        "BG_WARNING": Background.RESET,
+        "FG_ERROR": Foreground.RED,
+        "BG_ERROR": Background.RESET,
     }
 }
 
 def get_color(key):
     """ returns the color for the given key.
         If not present, it returns general reset value """
+    colorschema = os.environ.get('INTROPRG_COLORSCHEMA', 'clear')
+    if not colorschema in color_schemata:
+        print_warning_and_continue(
+            f"No disponible l'esquema de colors {colorschema}",
+            tip="Revisa el valor de la variable INTROPRG_COLORSCHEMA",
+            plain_color=True)
     return color_schemata.get(
-            os.environ.get('INTROPRG_COLORSCHEMA', 'black-over-white')
-        ).get(key, "\033[0m"
-    )
+        os.environ.get('INTROPRG_COLORSCHEMA', 'clear'),
+        color_schemata.get('clear')
+    ).get(key, "\033[0m")
 
 
 ##################################################
@@ -675,16 +703,42 @@ def print_err(text=''):
     print(text, file=sys.stderr)
 
 
-def print_error_and_exit(msg: str, tip: str = None):
-    """ prints the message and stops execution
-        if tip is set, it shows it in a different line """
-    print_err(f"{colorize_string('ERROR:')} {msg}")
+def print_error_and_exit(msg: str, tip: str = None,
+                         plain_color = False):
+    """ prints the message and stops execution with error code
+        if tip is set, it shows it in a different line.
+        if plain_color, it does not try to colorize"""
+    error_mark = 'ERROR: '
+    if not plain_color:
+        error_mark = colorize_string(error_mark,
+                                     forecolor=get_color('FG_ERROR'),
+                                     backcolor=get_color('BG_ERROR'))
+
+    print_err(f"{error_mark} {msg}")
     if tip is not None:
         print_err()
         for line in tip.splitlines():
             print_err("       " + line)
     print_err()
     sys.exit(1)
+
+
+def print_warning_and_continue(msg: str, tip: str = None,
+                               plain_color = False):
+    """ prints the message to the stderr and continues with execution.
+        if tip is set, it shows it in a different line.
+        if plain_color, it does not try to colorize"""
+    warning_mark = 'WARNING: '
+    if not plain_color:
+        warning_mark = colorize_string(warning_mark,
+                                         forecolor=get_color('FG_WARNING'),
+                                         backcolor=get_color('BG_WARNING'))
+    print_err(f"{warning_mark} {msg}")
+    if tip is not None:
+        print_err()
+        for line in tip.splitlines():
+            print_err("       " + line)
+    print_err()
 
 
 def load_yaml(path, allow_non_existing=False):
@@ -711,10 +765,18 @@ if __name__ == '__main__':
     try:
         prgtest = Prgtest()
         prgtest.run()
-    except SystemExit:
-        pass
-    except Exception:
+    except SystemExit as exception:
+        raise exception
+    except Exception as exception:
         if Prgtest.protected():
+            with open('__prgtest_dump.dat', 'a') as dest:
+                dest.write("\n\n" + "=" * 100 + "\n\n")
+                dest.write(f"{datetime.datetime.now()}\n")
+                issue = Path('/etc/issue')
+                dest.write(issue.read_text() if issue.is_file() else 'NO ISSUE\n')
+                dest.write(f"{sys.version}\n")
+                dest.write(str(os.environ))
+                traceback.print_exc(file=dest)
             print_error_and_exit("S'ha produït un error intern de prgtest. Comenta-li al teu docent")
         else:
             traceback.print_exc()
