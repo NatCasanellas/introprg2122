@@ -1,0 +1,56 @@
+##########################################
+Exercici 00_01. Similiritats i diferencies
+##########################################
+
+
+**Natalia Casanellas Blanquer 30/09/2021**
+
+Introduccio:
+------------ 
+Es tracta d'un exercici en que comparo la realitzacio d'un mateix programa escrit en diferents llenguatges de programacio. L'objectiu general del exercici es que diferents llenguatges tenen maneres diferents d'expressar les passes a realitzar per dur a terme la resolucio del problema. 
+
+1.Que fa el programa?
+---------------------
+*Quin és el problema que pretén resoldre el programa, independentment de amb quin llenguatge estigui escrit?*
+
+El problema que preten resoldre es el calcul de l'area d'un cercle.
+
+2.Elements comuns:
+------------------
+
+PI 3,14159: Es repeteix en pseudocodi i en C.
+Area: es repeteix en tots els llenguatges.
+Radi: tambe es repeteix en tots els llenguatges.
+Calcul de l'area d'un cercle: es repeteix en tots els llenguatges.
+
+3.Entrada/sortida:
+------------------
+
+*Versio C*
+Entrada:scanf("%f", &radi); 
+Sortida: area = PI * radi * radi;
+
+*Versio Python*
+Entrada: radi = float(linia)git add
+Sortida: area = math.pi * radi**2
+
+*Versio Java*
+Entrada: float radi = Float.parseFloat(linia);
+Sortida: float area = (float)Math.PI * radi *radi;
+
+*Versio Kotlin*
+Entrada: val radi = linia.toFloat()
+Sortida: val area = Math.PI.toFloat() * radi * radi
+
+4.Variables:
+------------
+
+Radi
+Area
+Pi (no estic gaire segura...)
+
+5.Preferencies:
+---------------
+
+Trobo mes interesant i facil d'entendre a primera vista Python.
+
