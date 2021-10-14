@@ -8,11 +8,11 @@
 
 3. *Si el valor pensat es 10, amb quin valor s'inicialitza la variable numero?*
 
-    30
+    numeroPensat = Integer.parseInt(args[0]);
 
 4. *La variable numero va canviant de valor durant el programa. Ets capaç d'indicar els diferents valors que va rebent dins del programa quan el numeroPensat es 10? Afageix la linia en la que pren cada valor.*
 
-Linia 21 el valor de numero es 30
-Linia 26 el valor de numero es 36
-Linia 31 el valor de numero es 12
-Linia 36 el valor de numero es 2
+ numero = numeroPensat * 3;
+ numero = numero + 6;
+ numero = numero / 3;
+ numero = numero - numeroPensat;
