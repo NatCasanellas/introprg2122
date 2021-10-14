@@ -5,7 +5,7 @@
      * $ java EndevinaNombre 42
      */
 
-    public class GuessNumber {
+    public class DecIn {
 
         public static void main(String[] args) {
 
