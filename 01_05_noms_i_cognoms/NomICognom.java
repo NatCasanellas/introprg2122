@@ -15,7 +15,7 @@ public class NomICognom {
 
         // obté el cognom
         System.out.println("I quin és el teu primer cognom?");
-        String cognom = "Taner";
+        String cognom = "Taner.";
 
         // Mostra resultat
         System.out.println("Ei " + nom + ", tinc una amiga que també és " + cognom);
