@@ -3,7 +3,7 @@
 
     *la data del teu aniversari:* dataAniversari
 
-    *el teu nom: nom
+    *el teu nom:* nomMeu
 
     *el color de fons del teu escriptori:* colorFonsEscriptori
 
