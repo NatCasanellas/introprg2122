@@ -2,7 +2,7 @@
  * Programa que recorda que els majors d'edat són responsables davant la
  * llei
  */
-public class Preso {
+public class LaPReso {
     public static void main(String[] args) {
         System.out.println("Com us dieu?");
         String nom = Entrada.readLine();
@@ -14,4 +14,7 @@ public class Preso {
         if (! (edat>= 18)) {
         System.out.println("Aneu amb compte ");
     }
+
+}
+
 }
