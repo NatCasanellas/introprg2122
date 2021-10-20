@@ -10,7 +10,7 @@
         public static void main(String[] args) {
 
             int numeroPensat = 42;   // guardarà el número pensat
-            int numero = numeroPensat;         // guardarà els càlculs intermitjos
+            int numero = numeroPensatjava ;         // guardarà els càlculs intermitjos
 
             // pensa un número
             numeroPensat = Integer.parseInt(args[42]);
