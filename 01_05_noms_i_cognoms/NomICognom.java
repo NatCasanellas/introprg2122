@@ -19,6 +19,6 @@ public class NomICognom {
 
 
         // Mostra resultat
-        System.out.println("Ei " + nom + ", tinc una amiga que també és " + cognom);
+        System.out.println("Ei " + nom + ", tinc una amiga que també és " + cognom + ".");
     }
 }
