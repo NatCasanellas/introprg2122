@@ -14,7 +14,7 @@
 
             // pensa un número
             numeroPensat = Integer.parseInt(Entrada.readLine());
-            System.out.print("El número pensat és  ");
+            System.out.println("El número pensat és " + numeroPensat + ".");
             System.out.println(numeroPensat);
 
             // Multiplica'l per 3
