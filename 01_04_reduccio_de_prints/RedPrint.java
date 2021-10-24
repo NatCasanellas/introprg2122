@@ -20,17 +20,17 @@
             // Multiplica'l per 3
             numero = numeroPensat * 3;
             System.out.println("Quan el multipliques per 3 obtens " + numero);
-            
+            System.out.println(numero);
 
             // Suma-li 6
             numero = numero + 6;
             System.out.println("Quan li sumes 6 arriba a " + numero);
-            
+            System.out.println(numero);
 
             // divideix-ho tot per 3
             numero = numero / 3;
             System.out.println("Un cop dividit per 3 queda " + numero);
-            
+            System.out.println(numero);
 
             // resta-li el número pensat
             numero = numero - numeroPensat;
