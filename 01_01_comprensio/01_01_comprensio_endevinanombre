@@ -12,7 +12,7 @@
 
 4. *La variable numero va canviant de valor durant el programa. Ets capaç d'indicar els diferents valors que va rebent dins del programa quan el numeroPensat es 10? Afageix la linia en la que pren cada valor.*
 
- numero = numeroPensat * 3;
- numero = numero + 6;
- numero = numero / 3;
- numero = numero - numeroPensat;
+ Linia 21: numero = numeroPensat * 3;
+ Linia 26: numero = numero + 6;
+ Linia 31: numero = numero / 3;
+ Linia 36: numero = numero - numeroPensat;
