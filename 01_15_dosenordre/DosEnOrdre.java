@@ -6,11 +6,11 @@ public class DosEnOrdre {
         System.out.println("Primer?");
         int primer = Integer.parseInt(Entrada.readLine());
 
-        if (primer <= 2) {
+        if (primer <= segon) {
             System.out.println("El primer es mes petit que el segon");
                 
         } else {
-            System.out.println (primer + " i " + 2);
+            System.out.println (1 + " i " + 2);
     }
   }
 }
