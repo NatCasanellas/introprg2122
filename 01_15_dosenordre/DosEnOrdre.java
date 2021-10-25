@@ -12,9 +12,9 @@ public class DosEnOrdre {
         System.out.println(segon);
         
         if (primer < segon) {
-            System.out.println(primer + "i" + segon);
+            System.out.println(primer + " i " + segon);
                 
-        } if (segon > primer) {
+        } else if (segon > primer) {
             System.out.println (segon + " i " + primer);
     }
   }
