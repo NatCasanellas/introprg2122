@@ -15,7 +15,7 @@ public class DosEnOrdre {
             System.out.println(primer + " i " + segon);
                 
         } else if (segon > primer) {
-            System.out.println (segon + " i " + primer);
+            System.out.println(segon + " i " + primer);
     }
   }
 }
