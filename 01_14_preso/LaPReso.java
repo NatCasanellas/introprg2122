@@ -11,8 +11,8 @@ public class LaPReso {
         if (edat >= 18) {
             System.out.println("Vos ja podeu anar a la preso!");
         }
-        if (edat < 18) {
-        System.out.println("Aneu amb compte ");
+        if (edat <= 18) {
+        System.out.println("Aneu amb compte " + nom + ".");
     }
 
 }
