@@ -12,7 +12,7 @@ public class Preso {
             System.out.println("Vos ja podeu anar a la presó!");
             System.out.println("Aneu amb compte " + nom );
         }
-        if (edat <= 18) {
+        if (edat < 18) {
         
             System.out.println("Aneu amb compte " + nom );
         
