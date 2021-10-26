@@ -11,7 +11,7 @@ public class Preso {
         if (edat >= 18) {
             System.out.println("Vos ja podeu anar a la presó!");
         }
-        else if (edat <= 18) {
+        if (edat <= 18) {
         System.out.println("Aneu amb compte " + nom );
     }
 }
