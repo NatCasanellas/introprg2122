@@ -24,7 +24,7 @@ public class DiaSetmana {
             case 5: diaSetmanaString = "Divendres";
                     break;         
                     
-            case 6: diaSetmanaString = "Disabte";
+            case 6: diaSetmanaString = "Dissabte";
                     break; 
                     
             default: diaSetmanaString = "Error";
