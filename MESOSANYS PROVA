@@ -1,0 +1,53 @@
+
+public class MajorEdat {
+    public static void main(String[] args) {
+        int edat = Integer.parseInt(args[0]);
+        if (edat >= 18) {
+            System.out.println("Ets major d'edat");
+        } else {
+            System.out.println("Ets menor d'edat");
+        }
+    }
+}
+
+
+
+
+                if (edat == 18) {
+                    System.out.println("Tot just major d'edat");
+              
+              } else if (edat > 18) {
+                  System.out.println("Ets major d'edat");
+              } else {
+                  System.out.println("Ets menor d'edat");
+              }
+              
+             
+    }
+}
+
+
+
+/*
+ * Programa que ordena dos nombres
+ */
+public class MesosAnys {
+    public static void main(String[] args) {
+        System.out.println("Mes?");
+        int mes = Integer.parseInt(Entrada.readLine());
+                
+        System.out.println("Any?");
+        int any = Integer.parseInt(Entrada.readLine());
+        
+        
+        if (mes == 10) {
+            System.out.println(mes + " i " + any);
+                
+        } else {
+            System.out.println("Anterior " + mes + "/" + any + " i posterior " + mes + "/" + any);
+            
+        
+            
+    }
+  }
+}
