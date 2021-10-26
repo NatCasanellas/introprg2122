@@ -16,8 +16,12 @@ public class DosEnOrdre {
                 
         } else if (segon > primer) {
             System.out.println(segon + " i " + primer);
+            
+        } else if (primer == segon) {
             System.out.println(primer + " i " + segon);
+            
     }
   }
 }
+
 
