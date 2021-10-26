@@ -8,10 +8,10 @@ public class ParellSenar {
         int numero = Integer.parseInt(args[0]);
         
         if ((numero % 2) == 1) {
-        System.out.println("El numero " + numero + " es senar ");
+        System.out.println("El número " + numero + " es senar ");
         
         } else if ((numero % 1) == 0) {
-        System.out.println("El numero " + numero + " es parell ");
+        System.out.println("El número " + numero + " es parell ");
         
        
     }
