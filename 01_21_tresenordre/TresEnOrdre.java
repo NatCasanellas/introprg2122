@@ -15,10 +15,13 @@ public class TresEnOrdre {
         
         if (primer < segon) {
             System.out.println(primer + ", " + segon + " i " + tercer);
-        
+            
+            
+        if (segon < tercer) {
+            System.out.println(primer + ", " + segon + " i " + tercer);
             
         
-            
+       }     
     }
   }
 }
