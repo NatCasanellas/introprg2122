@@ -18,7 +18,7 @@ public class DiaSetmana {
             case 3: diaSetmanaString = "Dimecres";
                     break;      
                     
-            case 4: diaSetmanaString = "Dijouss";
+            case 4: diaSetmanaString = "Dijous";
                     break; 
                     
             case 5: diaSetmanaString = "Divendres";
