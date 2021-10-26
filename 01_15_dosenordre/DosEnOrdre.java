@@ -14,11 +14,10 @@ public class DosEnOrdre {
         if (primer < segon) {
             System.out.println(primer + " i " + segon);
                 
-        } else if (segon > primer) {
+        } else {
             System.out.println(segon + " i " + primer);
             
-        } else if (primer == segon) {
-            System.out.println(primer + " i " + segon);
+        
             
     }
   }
