@@ -27,6 +27,9 @@ public class DiaSetmana {
             case 6: diaSetmanaString = "Dissabte";
                     break; 
                     
+            case 7: diaSetmanaString = "Diumenge";
+                    break; 
+                    
             default: diaSetmanaString = "Error";
                     break;                  
             
