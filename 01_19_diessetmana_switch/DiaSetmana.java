@@ -2,7 +2,7 @@
  * Programa que indica si el número proporcionat es dia de la setmana.
  * Si s'especifica un numero que no es de la setmana, el resultat és error.
  */
-public class DiaSetmanaSwitch {
+public class DiaSetmana {
     public static void main(String[] args) {
     
         int numero = Integer.parseInt(args[0]);
