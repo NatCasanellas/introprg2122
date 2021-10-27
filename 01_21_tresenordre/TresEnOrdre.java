@@ -17,11 +17,12 @@ public class TresEnOrdre {
             System.out.println(primer + ", " + segon + " i " + tercer);
          
          } else if (tercer > segon) {
-             System.out.println("Ets major d'edat");
+             System.out.println(primer + ", " + segon + " i " + tercer);
             
+            /*
              } else {
             System.out.println(primer + ", " + segon + " i " + tercer);
-     
+     */
             
         
             
