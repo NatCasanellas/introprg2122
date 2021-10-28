@@ -15,17 +15,25 @@ public class CalculadoraSenzilla {
         if (operador == '+') {
             double resultat = operand1 + operand2;
             System.out.println(operand1 + " + " + operand2 + " = " + resultat);
+            
         } else if (operador == '-') {
             double resultat = operand1 - operand2;
             System.out.println(operand1 + " - " + operand2 + " = " + resultat);
+            
         } else if (operador == '*') {
             double resultat = operand1 - operand2;
             System.out.println(operand1 + " * " + operand2 + " = " + resultat);
-        } else if (operador == '/') {
+            
+        } else if (operador == '/' && !(operand2 == 0)) {
             double resultat = operand1 - operand2;
             System.out.println(operand1 + " / " + operand2 + " = " + resultat);
-          
-            /*  */
-        } /*  */
-    }
+            
+        } else if (operador == '^')  {
+            System.out.println("Loperador ^ no està disponible");
+            
+        } else if (operador == '/' && operand2 == 0) {
+            double resultat = operand1 - operand2;
+            System.out.println(operand1 + " / " + operand2 + " = " + resultat);   
+        }    
+     }
 }
