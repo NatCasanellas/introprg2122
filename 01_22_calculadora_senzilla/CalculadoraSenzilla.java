@@ -33,7 +33,7 @@ public class CalculadoraSenzilla {
             
         } else if (operador == '/' && operand2 == 0) {
             double resultat = operand1 - operand2;
-            System.out.println(operand1 + " / " + operand2 + " = " + resultat);   
+            System.out.println("No es pot dividir entre 0");   
         }    
      }
 }
