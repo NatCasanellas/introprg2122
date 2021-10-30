@@ -29,7 +29,7 @@ public class CalculadoraSenzilla {
             System.out.println(operand1 + " / " + operand2 + " = " + resultat);
             
         } else if (operador == '^')  {
-            System.out.println("Loperador ^ no està disponible");
+            System.out.println("L'operador ^ no està disponible");
             
         } else if (operador == '/' && operand2 == 0) {
             double resultat = operand1 - operand2;
