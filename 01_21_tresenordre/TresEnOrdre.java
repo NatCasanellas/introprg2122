@@ -13,10 +13,10 @@ public class TresEnOrdre {
         int tercer = Integer.parseInt(Entrada.readLine());
         
         
-        if (primer < segon) {
+        if (primer <= segon) {
             System.out.println(primer + ", " + segon + " i " + tercer);
          
-         } else if (tercer > segon) {
+         } else if (tercer >= segon) {
              System.out.println(primer + ", " + segon + " i " + tercer);
             
             /*
