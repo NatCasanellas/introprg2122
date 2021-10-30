@@ -20,7 +20,7 @@ public class TresEnOrdre {
              System.out.println(segon + ", " + primer + " i " + tercer);
              
          } else {
-            System.out.println(segon + " i " + primer);    
+            System.out.println(tercer + " i " + primer + " i " + segon);    
             
             /*
              } else {
