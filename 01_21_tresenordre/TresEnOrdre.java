@@ -33,7 +33,6 @@ public class TresEnOrdre {
             System.out.println(segon + " i " + primer);
             
             
-            
      */
             
         
