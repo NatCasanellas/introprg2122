@@ -32,7 +32,7 @@ public class CalculadoraSenzilla {
             System.out.println("L'operador ^ no està disponible");
             
         } else if (operador == '/' && operand2 == 0) {
-            double resultat = operand1 - operand2;
+            double resultat = operand1 / operand2;
             System.out.println("No es pot dividir entre 0");   
         }    
      }
