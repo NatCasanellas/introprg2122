@@ -10,7 +10,7 @@ public class MesosAnys {
         int any = Integer.parseInt(Entrada.readLine());
         
         
-        if (mes) {
+        if (mes = ) {
             System.out.println(mes + " i " + any);
                 
         } else {
