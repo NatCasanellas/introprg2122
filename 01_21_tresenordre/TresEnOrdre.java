@@ -13,20 +13,29 @@ public class TresEnOrdre {
         int tercer = Integer.parseInt(Entrada.readLine());
         
         
-        if (primer < segon) {
-            System.out.println(primer + ", " + segon + " i " + tercer);
+        if (primer>segon)  
+          if (primer>tercer) 
+            if (segon>tercer) {
+            System.out.println(tercer + ", " + segon + " i " + primer);
+            
+            
+            } else {
+                 System.out.println(primer + ", " + tercer + " i " + segon);
+            }     
          
-         } else if (tercer > segon) {
+         else {
              System.out.println(segon + ", " + primer + " i " + tercer);
-             
-         } else if (primer < tercer) {
-            System.out.println(primer + ", " + segon + " i " + tercer);
+             }
+          else {
+              if (segon>tercer) 
+                 if (primer>tercer) {
+                     System.out.println(tercer + ", " + primer + " i " + segon);
          
-             
          } else {
             System.out.println(primer + " i " + tercer + " i " + segon);    
-            
-           
+        } else {
+            System.out.println(primer + " i " + segon + " i " + tercer);
+       }    
     }
   }
 }
