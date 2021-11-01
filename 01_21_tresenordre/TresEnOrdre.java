@@ -18,15 +18,15 @@ public class TresEnOrdre {
             if (segon>tercer) {
             System.out.println(tercer + ", " + segon + " i " + primer);
             
-            
             } else {
                  System.out.println(primer + ", " + tercer + " i " + segon);
-            }     
+                 
          
-         else {
+        } else {
              System.out.println(segon + ", " + primer + " i " + tercer);
-             }
-          else {
+             
+             
+         } else {
               if (segon>tercer) 
                  if (primer>tercer) {
                      System.out.println(tercer + ", " + primer + " i " + segon);
