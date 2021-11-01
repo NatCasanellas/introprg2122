@@ -32,9 +32,9 @@ public class TresEnOrdre {
                      System.out.println(tercer + ", " + primer + " i " + segon);
          
          } else {
-            System.out.println(primer + " i " + tercer + " i " + segon);    
+            System.out.println(primer + " , " + tercer + " i " + segon);    
         } else {
-            System.out.println(primer + " i " + segon + " i " + tercer);
+            System.out.println(primer + " , " + segon + " i " + tercer);
        }    
     }
   }
