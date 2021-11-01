@@ -31,10 +31,11 @@ public class TresEnOrdre {
                  if (primer>tercer) {
                      System.out.println(tercer + ", " + primer + " i " + segon);
          
-         } else {
-            System.out.println(primer + ", " + tercer + " i " + segon);    
-        } else {
-            System.out.println(primer + ", " + segon + " i " + tercer);
+              } else {
+                     System.out.println(primer + ", " + tercer + " i " + segon);  
+              
+              } else {
+                     System.out.println(tercer + ", " + segon + " i " + primer);
        }    
     }
   }
