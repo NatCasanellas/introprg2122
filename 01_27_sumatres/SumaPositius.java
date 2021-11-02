@@ -32,12 +32,9 @@ public class SumaPositius {
         valor = Integer.parseInt(Entrada.readLine());
         if (valor >= 0) {
             suma = suma + valor;
-        }
+        
 
-        System.out.println();
-        valor = Integer.parseInt(Entrada.readLine());
-        if (valor >= 0) {
-            suma = suma + valor;
+        
          }
         /* █████ aquí el teu codi */
 
