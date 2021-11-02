@@ -1,5 +1,5 @@
 /*
-
+El programa suma 3 positius
 */
 
 public class SumaPositius {
@@ -32,12 +32,8 @@ public class SumaPositius {
         valor = Integer.parseInt(Entrada.readLine());
         if (valor >= 0) {
             suma = suma + valor;
-        
-
-        
+    
          }
-        /* █████ aquí el teu codi */
-
         // mostrem el resultat
         System.out.println("La suma és " + suma);
     }
