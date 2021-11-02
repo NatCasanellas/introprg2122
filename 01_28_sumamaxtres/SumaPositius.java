@@ -24,6 +24,13 @@ public class SumaPositius {
            valor = Integer.parseInt(Entrada.readLine());
            if (valor >= 0) {
                suma = suma + valor;
+        }       
+       
+       // processem el tercer valor
+           System.out.println("Introdueix el tercer valor");
+           valor = Integer.parseInt(Entrada.readLine());
+           if (valor >= 0) {
+               suma = suma + valor;
        
              }
          
