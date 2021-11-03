@@ -15,7 +15,9 @@ public class SumaPositius {
         // processem el primer valor
         System.out.println("Introdueix el primer valor");
         valor = Integer.parseInt(Entrada.readLine());
-        if (valor >= 0) {
+        if (valor >= 0)
+          if (valor != 0) {
+        
             suma = suma + valor;
         }
 
