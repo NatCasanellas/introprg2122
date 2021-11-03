@@ -14,7 +14,7 @@
                }
                
             }
-            System.out.println("La suma és " + suma);
+            System.out.println("Valors parells introduïts: " + suma);
  
  
  
