@@ -32,7 +32,8 @@ public class Ascensor {
         } else if (plantaActual.equals("segon pis") && plantaNova.equals ("baixar un")) {
             System.out.println("planta baixa");   
         
-        } else { System.out.println("planta baixa");
+        } else { 
+        System.out.println("error");
         
         }    
      }
