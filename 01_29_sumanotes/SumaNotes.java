@@ -1,4 +1,7 @@
-
+/*
+El programa et dona les notes obtingudes dels alumnes, fins que un cop rebi una
+fora de valor del rang.
+*/
 
 public class SumaNotes {
     public static void main(String[] args) {
@@ -18,7 +21,7 @@ public class SumaNotes {
             valor = Integer.parseInt(Entrada.readLine());
         }
 
-        while (valor > 100) {
+        while (valor < 100) {
             suma = suma + valor;
             System.out.println("Introdueix una nota");
             valor = Integer.parseInt(Entrada.readLine());
