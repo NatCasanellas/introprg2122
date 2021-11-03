@@ -4,38 +4,36 @@
  */
 public class Ascensor {
     public static void main(String[] args) {
-        System.out.println("pis?");
-            int pis = Integer.parseInt(Entrada.readLine());
-        System.out.println("botó?");
-            int boto = Integer.parseInt(Entrada.readLine());
-        System.out.println("Operand2?");
-            int pis = Integer.parseInt(Entrada.readLine());
-        
     
-      /* Planta baixa
+        System.out.println("pis?");
+            String plantaActual = Entrada.readLine();
+        System.out.println("botó?");
+            String plantaNova = Entrada.readLine();
+        
+        
+      /* 
+      Planta baixa
       */
-        if (operador == '+') {
-            double resultat = operand1 + operand2;
-            System.out.println(operand1 + " + " + operand2 + " = " + resultat);
+        if (plantaActual.equals("planta baixa") && plantaNova.equals ("pujar un")) {
+            System.out.println("primer pis");
             
-        } else if (operador == '-') {
-            double resultat = operand1 - operand2;
-            System.out.println(operand1 + " - " + operand2 + " = " + resultat);
+        } else if (plantaActual.equals("planta baixa") && plantaNova.equals ("pujar dos")) {
+            System.out.println("segon pis");
             
-        } else if (operador == '*') {
-            double resultat = operand1 * operand2;
-            System.out.println(operand1 + " * " + operand2 + " = " + resultat);
+        } else if (plantaActual.equals("primer pis") && plantaNova.equals ("pujar un")) {
+            System.out.println("segon pis");
             
-        } else if (operador == '/' && !(operand2 == 0)) {
-            double resultat = operand1 / operand2;
-            System.out.println(operand1 + " / " + operand2 + " = " + resultat);
+        } else if (plantaActual.equals("primer pis") && plantaNova.equals ("baixar un")) {
+            System.out.println("planta baixa");
             
-        } else if (operador == '^')  {
-            System.out.println("L'operador ^ no està disponible");
+        } else if (plantaActual.equals("segon pis") && plantaNova.equals ("baixar un")) {
+            System.out.println("primer pis");
             
-        } else if (operador == '/' && operand2 == 0) {
-            double resultat = operand1 / operand2;
-            System.out.println("No es pot dividir entre 0");   
+        } else if (plantaActual.equals("segon pis") && plantaNova.equals ("baixar un")) {
+            System.out.println("planta baixa");   
+        
+        } else { System.out.println("error");
+        
         }    
      }
 }
