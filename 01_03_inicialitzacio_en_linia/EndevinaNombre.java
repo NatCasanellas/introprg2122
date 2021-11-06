@@ -13,7 +13,7 @@
             int numero;         // guardarà els càlculs intermitjos
 
             // pensa un número
-            numeroPensat = Integer.parseInt(Entrada.readLine());
+            numeroPensat = Integer.parseInt(args[0]);;
             System.out.println("El número pensat és ");
             
 
