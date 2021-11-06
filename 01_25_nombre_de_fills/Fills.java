@@ -10,7 +10,7 @@ public class Fills {
             int numero = Integer.parseInt(Entrada.readLine());
      
             if (numero < 0) {
-                 System.out.println("No pots tenir menys de 0 fills");
+                 System.out.println("No pots tenir menys de 0 fills!");
            
             } else if (numero <= 0) {
                 System.out.println("Tot el que t'has estalviat en bolquers!");  
