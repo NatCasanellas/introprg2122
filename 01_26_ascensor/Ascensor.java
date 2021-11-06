@@ -13,34 +13,41 @@ public class Ascensor {
         
       // Planta baixa 
       
+        if (plantaActual.equals("planta baixa") && plantaNova.equals("pujar un")) {
+                System.out.println("primer pis");
+                
+         } else if (plantaActual.equals("primer pis") && plantaNova.equals("pujar un")) {
+                System.out.println("segon pis");
+         
+         }
+         
       
       
-      
-        if (plantaActual.equals("planta baixa") && plantaNova.equals ("pujar un")) {
-             System.out.println("primer pis");
+        //if (plantaActual.equals("planta baixa") && plantaNova.equals ("pujar un")) {
+            // System.out.println("primer pis");
             
-        } else if (plantaActual.equals("planta baixa") && plantaNova.equals ("pujar dos")) {
-            System.out.println("segon pis");
+       //} else if (plantaActual.equals("planta baixa") && plantaNova.equals ("pujar dos")) {
+            //System.out.println("segon pis");
        
        // Primer pis
             
-        } else if (plantaActual.equals("primer pis") && plantaNova.equals ("pujar un")) {
-            System.out.println("segon pis");
+       // } else if (plantaActual.equals("primer pis") && plantaNova.equals ("pujar un")) {
+           // System.out.println("segon pis");
             
-        } else if (plantaActual.equals("primer pis") && plantaNova.equals ("baixar un")) {
-            System.out.println("planta baixa");
+      //  } else if (plantaActual.equals("primer pis") && plantaNova.equals ("baixar un")) {
+           // System.out.println("planta baixa");
           
        // Segon pis   
             
-        } else if (plantaActual.equals("segon pis") && plantaNova.equals ("baixar un")) {
-            System.out.println("primer pis");
+       // } else if (plantaActual.equals("segon pis") && plantaNova.equals ("baixar un")) {
+           // System.out.println("primer pis");
             
-        } else if (plantaActual.equals("segon pis") && plantaNova.equals ("baixar un")) {
-            System.out.println("planta baixa");   
+       // } else if (plantaActual.equals("segon pis") && plantaNova.equals ("baixar un")) {
+           // System.out.println("planta baixa");   
         
-        } else { 
-        System.out.println("error");
+     //   } else { 
+     //   System.out.println("error");
         
-        }    
+            
      }
 }
