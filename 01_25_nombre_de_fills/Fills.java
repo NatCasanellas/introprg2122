@@ -18,7 +18,7 @@ public class Fills {
             } else if (numero == 1) {
                 System.out.println("Compte de no mimar-lo massa!");
         
-            } else if (numero >= 2) {
+            } else if (numero < 2) {
                 System.out.println("No t'avorreixes a casa, eh?");
         
             } else if (numero > 4) {
