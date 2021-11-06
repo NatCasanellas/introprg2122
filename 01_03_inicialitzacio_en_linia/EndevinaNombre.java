@@ -5,7 +5,7 @@
      * $ java EndevinaNombre 42
      */
 
-    public class DecIn {
+    public class EndevinaNombre {
 
         public static void main(String[] args) {
 
@@ -14,28 +14,28 @@
 
             // pensa un número
             numeroPensat = Integer.parseInt(args[0]);
-            System.out.print("El número pensat és ");
-            System.out.println(numeroPensat);
+            System.out.println("El número pensat és ");
+            
 
             // Multiplica'l per 3
             numero = numeroPensat * 3;
-            System.out.print("Quan el multipliques per 3 obtens ");
-            System.out.println(numero);
+            System.out.println("Quan el multipliques per 3 obtens ");
+            
 
             // Suma-li 6
             numero = numero + 6;
-            System.out.print("Quan li sumes 6 arriba a ");
-            System.out.println(numero);
+            System.out.println("Quan li sumes 6 arriba a ");
+            
 
             // divideix-ho tot per 3
             numero = numero / 3;
-            System.out.print("Un cop dividit per 3 queda ");
-            System.out.println(numero);
+            System.out.println("Un cop dividit per 3 queda ");
+            
 
             // resta-li el número pensat
             numero = numero - numeroPensat;
-            System.out.print("Finalment, en restar-li el valor inicial, queda ");
-            System.out.println(numero);
+            System.out.println("Finalment, en restar-li el valor inicial, queda ");
+            
 
             // compara el resultat
             System.out.println("A que el resultat és 2?");
