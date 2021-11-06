@@ -16,9 +16,9 @@ public class Pagament {
                  //int resultat = numero - numero1;
                 System.out.println("Sobren " + (numero1 - numero) + "€");
            
-            } else if (numero > 100) {
+            } else if (numero > numero1) {
                  //int resultat = numero - numero1;
-               System.out.println("Falten " + (numero - 2) + "€");  
+               System.out.println("Falten " + (numero - numero1) + "€");  
             
             } else {
     
