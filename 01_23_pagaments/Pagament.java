@@ -12,7 +12,7 @@ public class Pagament {
            System.out.println("Paga?");
            int numero1 = Integer.parseInt(Entrada.readLine());
     
-             if (numero <= numero1) {
+             if (numero < numero1) {
                  //int resultat = numero - numero1;
                 System.out.println("Sobren " + (numero1 - numero) + "€");
            
@@ -20,7 +20,7 @@ public class Pagament {
                  //int resultat = numero - numero1;
                System.out.println("Falten " + (numero - numero1) + "€");  
             
-            } else {
+            } else if (numero == numero1) {
     
                 System.out.println("No sobra ni falta res");
         
