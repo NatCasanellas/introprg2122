@@ -9,8 +9,6 @@ public class Ascensor {
             String plantaActual = Entrada.readLine();
         System.out.println("botó?");
             String plantaNova = Entrada.readLine();
-        
-        
       
       
         if (plantaActual.equals("planta baixa") && plantaNova.equals("pujar un")) {
@@ -21,7 +19,6 @@ public class Ascensor {
          
          } else if (plantaActual.equals("planta baixa") && plantaNova.equals("pujar dos")) {
                 System.out.println("segon pis");
-         
          
       
       
@@ -36,6 +33,9 @@ public class Ascensor {
          
          } else if (plantaActual.equals("segon pis") && plantaNova.equals("baixar dos")) {
                 System.out.println("planta baixa");
+                
+         } else {      
+              System.out.println("error"); 
          
       
         //if (plantaActual.equals("planta baixa") && plantaNova.equals ("pujar un")) {
