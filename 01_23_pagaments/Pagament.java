@@ -13,15 +13,12 @@ public class Pagament {
            int numero1 = Integer.parseInt(Entrada.readLine());
     
              if (numero < numero1) {
-                 //int resultat = numero - numero1;
-                System.out.println("Sobren " + (numero1 - numero) + "€");
+                 System.out.println("Sobren " + (numero1 - numero) + "€");
            
             } else if (numero > numero1) {
-                 //int resultat = numero - numero1;
-               System.out.println("Falten " + (numero - numero1) + "€");  
+                System.out.println("Falten " + (numero - numero1) + "€");  
             
             } else if (numero == numero1) {
-    
                 System.out.println("No sobra ni falta res");
         
         }
