@@ -14,7 +14,7 @@ public class Pagament {
     
              if (numero < 150) {
                  //int resultat = numero - numero1;
-                System.out.println("Sobren " + numero + "€");
+                System.out.println("Sobren " + (numero -48) + "€");
            
             } else if (numero > 100) {
                  //int resultat = numero - numero1;
