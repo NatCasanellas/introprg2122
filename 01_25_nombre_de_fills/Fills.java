@@ -21,7 +21,7 @@ public class Fills {
             } else if (numero >= 2) {
                 System.out.println("No t'avorreixes a casa, eh?");
         
-            } else if (numero >= 4) {
+            } else if (numero > 4) {
                 System.out.println("Tu sí fas país!");
         
             }
