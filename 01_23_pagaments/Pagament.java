@@ -12,13 +12,13 @@ public class Pagament {
            System.out.println("Paga?");
            int numero1 = Integer.parseInt(Entrada.readLine());
     
-             if (numero < numero1) {
-                 int resultat = numero - numero1;
-                System.out.println("Sobren " + resultat + "€");
+             if (numero < 150) {
+                 //int resultat = numero - numero1;
+                System.out.println("Sobren " + numero + "€");
            
-            } else if (numero > numero1) {
-                 int resultat = numero - numero1;
-               System.out.println("Falten " + resultat + "€");  
+            } else if (numero > 100) {
+                 //int resultat = numero - numero1;
+               System.out.println("Falten " + numero + "€");  
             
             } else {
     
