@@ -20,16 +20,11 @@ public class Pagament {
                  int resultat = numero - numero1;
                System.out.println("Falten " + resultat + "€");  
             
-            }
-        
-        
-             System.out.println("Falten " + numero + "€");
-    
-    
-             if (numero == numero1) {
+            } else {
     
                 System.out.println("No sobra ni falta res");
-    }
+        
+        }
     
-    }
-    }
+      }
+  }
