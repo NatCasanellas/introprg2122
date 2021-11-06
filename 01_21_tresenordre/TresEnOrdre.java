@@ -3,40 +3,39 @@
  */
 public class TresEnOrdre {
     public static void main(String[] args) {
+    
+    int a, b, c;
+    
         System.out.println("Primer?");
-        int primer = Integer.parseInt(Entrada.readLine());
+        a = Integer.parseInt(Entrada.readLine());
         
         System.out.println("Segon?");
-        int segon = Integer.parseInt(Entrada.readLine());
+        b = Integer.parseInt(Entrada.readLine());
         
         System.out.println("Tercer?");
-        int tercer = Integer.parseInt(Entrada.readLine());
+        c = Integer.parseInt(Entrada.readLine());
         
         
-        if (primer>segon)  
-          if (primer>tercer) 
-            if (segon>tercer) {
-                 System.out.println(tercer + ", " + segon + " i " + primer);
-            
-            } else {
-                 System.out.println(primer + ", " + tercer + " i " + segon);
-                 
-            } else {
-                 System.out.println(segon + ", " + primer + " i " + tercer);
-            
-           
-             
-         } else {
-              if (segon>tercer) 
-                 if (primer>tercer) {
-                     System.out.println(tercer + ", " + primer + " i " + segon);
-         
-              } else {
-                     System.out.println(primer + ", " + tercer + " i " + segon);  
-              
-              } else {
-                     System.out.println(primer + ", " + segon + " i " + tercer);
-       }    
-    }
-  }
-}
+       
+        if(a<b) {
+             if (b<c) {
+              System.out.println( + a + ", " + b + " i " + c);
+             }
+             else if (a<c) {
+                 System.out.println( + a + ", " + c + " i " + b);
+            } else{
+                System.out.println( + c + ", " + a + " i " + b);
+            }  
+       
+        }else if (b<c) {
+            if(a<c) {
+                    System.out.println( + b + ", " + a + " i " + c);
+             } else{
+                 System.out.println( + b + ", " + c + " i " + a);
+             }
+          } else{
+            System.out.println( + c + ", " + b + " i " + a );
+        }
+       
+     }
+ }    
