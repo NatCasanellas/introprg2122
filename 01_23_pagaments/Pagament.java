@@ -12,9 +12,9 @@ public class Pagament {
            System.out.println("Paga?");
            int numero1 = Integer.parseInt(Entrada.readLine());
     
-             if (numero <= 150) {
+             if (numero <= numero1) {
                  //int resultat = numero - numero1;
-                System.out.println("Sobren " + (numero - 48) + "€");
+                System.out.println("Sobren " + (numero - numero1) + "€");
            
             } else if (numero > 100) {
                  //int resultat = numero - numero1;
