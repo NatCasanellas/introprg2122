@@ -1,9 +1,11 @@
 /*
-
+* Aquest programa demana enters positius i que, en el moment que rebi un 
+* de negatiu, mostra el nombre de valors parells introduïts i finalitza 
+* l'execució.
 */
 
- public class ComptaParells {
-     public static void main(String[] args) {
+public class ComptaParells {
+    public static void main(String[] args) {
           int suma = 0;
           int valor = 0;
           int valor = ;

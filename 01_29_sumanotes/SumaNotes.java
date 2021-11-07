@@ -1,6 +1,6 @@
 /*
-El programa et dona les notes obtingudes dels alumnes, fins que rebi una
-fora de valor del rang, deixara de demanar més i mostrara el valor resultant.
+* El programa et dona les notes obtingudes dels alumnes, fins que rebi una
+* fora de valor del rang, deixara de demanar més i mostrara el valor resultant.
 */
 
 public class SumaNotes {
