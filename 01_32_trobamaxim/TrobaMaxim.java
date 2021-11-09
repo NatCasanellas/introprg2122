@@ -17,7 +17,7 @@ public class TrobaMaxim {
                     suma = suma + valor;
                }
             }
-            System.out.println("Valors parells introduïts: " + suma);
+            System.out.println("El màxim és " + suma);
     
     }
 
