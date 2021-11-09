@@ -19,12 +19,18 @@ public class SumaNotes {
             // demana un nou valor
             System.out.println("Introdueix una nota");
             valor = Integer.parseInt(Entrada.readLine());
-        }
-
-        while (valor > 100) {
+            
+            while (valor > 100) {
             suma = suma + valor;
             System.out.println("Introdueix una nota");
             valor = Integer.parseInt(Entrada.readLine());
+        
+        
+            }
+        //while (valor > 100) {
+           // suma = suma + valor;
+           // System.out.println("Introdueix una nota");
+           // valor = Integer.parseInt(Entrada.readLine());
         }
 
         // mostrem el resultat

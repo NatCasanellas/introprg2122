@@ -8,14 +8,14 @@ public class Lloro {
         System.out.println("El lloro espera paraula:");
             String paraula = Entrada.readline();
             
-            while(! (paraula.isEmpty()); {
+            while(! (paraula.isEmpty())); {
             System.out.println("El lloro espera paraula:");
             String paraula = Entrada.readline();
             if (! (paraula.isEmpty() || paraula.isBlank())){
             System.out.println ("El lloro repeteix: " + paraula);  
             
             System.out.println("Adéu");
-    }
-
-
+     }
+   }
+  }
 }
