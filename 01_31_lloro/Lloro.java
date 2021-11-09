@@ -10,10 +10,10 @@ public class Lloro {
             
             while(!paraula.isBlank()) {
             System.out.println("El lloro repeteix: " + paraula);
-            while(!paraula.isBlank()) {
+            
             System.out.println("El lloro espera paraula: " + paraula);
             paraula = Entrada.readLine();
-            }
+            
             }
             System.out.println("Adéu");
      }
