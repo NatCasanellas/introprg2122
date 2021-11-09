@@ -6,16 +6,15 @@
 public class Lloro {
     public static void main(String[] args) {
         System.out.println("El lloro espera paraula:");
-            String paraula = Entrada.readline();
+            String paraula = Entrada.readLine();
             
-            while(! (paraula.isEmpty())); {
-            System.out.println("El lloro espera paraula:");
-            String paraula = Entrada.readline();
-            if (! (paraula.isEmpty() || paraula.isBlank())){
-            System.out.println ("El lloro repeteix: " + paraula);  
+            while(!paraula.isBlank()) {
+            System.out.println("El lloro repeteix: " + paraula);
+            System.out.println("El lloro espera paraula: " + paraula);
+            paraula = Entrada.readLine();
             
+            }
             System.out.println("Adéu");
      }
-   }
-  }
+   
 }
