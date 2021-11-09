@@ -17,7 +17,6 @@ public class ComptaParells {
                System.out.println("Introdueix un valor");
                     suma = suma + valor;
                }
-               
             }
             System.out.println("Valors parells introduïts: " + suma);
  
