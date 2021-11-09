@@ -12,10 +12,10 @@ public class TrobaMaxim {
           while (valor >= 0) {
                System.out.println("Introdueix un valor");
                valor = Integer.parseInt(Entrada.readLine());
-               while (valor <= 0) {
-               System.out.println("Introdueix un valor");
-                    suma = suma + valor;
-               }
+               //if (valor >= 0) {
+               //System.out.println("Introdueix un valor");
+                 //   suma = suma + valor;
+               //}
             }
             System.out.println("El màxim és " + suma);
     
