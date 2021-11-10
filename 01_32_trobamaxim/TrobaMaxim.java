@@ -6,8 +6,11 @@
 public class TrobaMaxim {
     public static void main(String[] args) {
     
-          int suma = 0;
-          int valor = 0;
+           int suma = 0;
+           
+           System.out.println("Introdueix una nota");
+           int valor = Integer.parseInt(Entrada.readLine());
+         // int valor = 0;
           
           while (valor >= 0) {
                System.out.println("Introdueix un valor");

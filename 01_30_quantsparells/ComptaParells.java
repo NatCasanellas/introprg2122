@@ -16,9 +16,7 @@ public class ComptaParells {
                if (valor >= 0) {
                System.out.println("Introdueix un valor");
                     suma = suma + valor;
-                
-               if (Valor <= 0) {
-               System.out.println("Introdueix un valor");
+              
                }
             }
             System.out.println("Valors parells introduïts: " + suma);
