@@ -15,7 +15,7 @@ public class ComptaParells {
                System.out.println("Introdueix un valor");
                valor = Integer.parseInt(Entrada.readLine());
                
-    //quan aquest numero sigui parell, anira suman en 1 el numero total de  parells           
+    // quan aquest numero sigui parell, anira suman en 1 el numero total de  parells           
                if (valor%2 == 0 && valor >= 0) {
                   suma = suma + 1;
                
