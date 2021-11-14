@@ -15,7 +15,7 @@ public class TrobaMaxim {
           maxim = Integer.parseInt(Entrada.readLine());
           
    //quan aquest numero sigui negatiu, anira suman en 1 el numero total de  parells 
-          if (maxim%2 == 0 && maxim >= 0) {
+          if (maxim == 0 && maxim >= 0) {
                   valor = valor + 1;
           
             }
