@@ -11,7 +11,7 @@ public class TrobaMaxim {
           
     //mentres el numero sigui >= 0 seguira preguntant al usuari el numero
           while (maxim >= 0) {
-          System.out.println("introdueix valor");
+          System.out.println("introdueix un valor");
           maxim = Integer.parseInt(Entrada.readLine());
           
    //quan aquest numero sigui negatiu, anira suman en 1 el numero total de  parells 
