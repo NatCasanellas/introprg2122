@@ -7,7 +7,7 @@
 public class ComptaParells {
     public static void main(String[] args) {
     
-          int suma = 0;
+          //int suma = 0;
           int valor = 0;
           
           while ((valor >= 0 && valor <= 0)) {
@@ -16,12 +16,12 @@ public class ComptaParells {
                if (valor >= 0) {
                System.out.println("Introdueix un valor");
                     //suma = suma + valor;
-               if (valor == 0) {
+               
               
                }
             }
             // mostra el resultat
-            System.out.println("Valors parells introduïts: " + suma);
-          }   
+            System.out.println("Valors parells introduïts: " + valor);
+             
         }
  }
