@@ -16,10 +16,12 @@ public class ComptaParells {
                if (valor >= 0) {
                System.out.println("Introdueix un valor");
                     //suma = suma + valor;
+               if (valor == 0) {
               
                }
             }
+            // mostra el resultat
             System.out.println("Valors parells introduïts: " + suma);
- 
+          }   
         }
  }
