@@ -13,9 +13,9 @@ public class ComptaParells {
           while ((valor >= 0 && valor <= 0)) {
                System.out.println("Introdueix un valor");
                valor = Integer.parseInt(Entrada.readLine());
-               if (valor >= 0) {
-               System.out.println("Introdueix un valor");
-                    suma = suma + valor;
+               if (valor < 0) {
+               //System.out.println("Introdueix un valor");
+                    //suma = suma + valor;
               
                }
             }
