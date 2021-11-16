@@ -6,7 +6,7 @@
 public class TrobaMaxim {
     public static void main(String[] args) {
     
-          int maxim = 0;
+          int maxim = 1;
           int valor = 0;
           
     //mentres el numero sigui >= 0 seguira preguntant al usuari el numero
