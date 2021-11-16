@@ -9,7 +9,7 @@ public class DeuPrimersDecreixent {
          
          while (numero <= 1) {  // condició de sortida en passar del darrer valor
              System.out.println(numero);
-             numero = numero + 10;    // passem el número al següent
+             numero = numero + 1;    // passem el número al següent
          }
     
     }
