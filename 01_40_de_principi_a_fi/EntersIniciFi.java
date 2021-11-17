@@ -15,7 +15,7 @@ public class EntersIniciFi {
     
     
         System.out.println("Valor final?");
-        while (fi < salt)
+        fi = inici + 3;
         
         System.out.println("Salt?");
         }
