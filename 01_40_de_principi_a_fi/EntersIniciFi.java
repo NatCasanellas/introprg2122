@@ -8,14 +8,16 @@ public class EntersIniciFi {
     
         int inici = Integer.parseInt(Entrada.readLine());
         int fi = Integer.parseInt(Entrada.readLine());
+        int salt = Integer.parseInt(Entrada.readLine());
         
-        while (inici <= 16)
         System.out.println("Valor inicial?");
-        
-    
+        while (inici < 0) {
     
     
         System.out.println("Valor final?");
+        while (fi < salt)
         
+        System.out.println("Salt?");
+        }
     }
 }
