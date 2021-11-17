@@ -6,11 +6,10 @@
 public class EntersIniciFi {
     public static void main(String[] args ){
     
-        int inicial = Integer.parseInt(Entrada.readLine());
-        int final = Integer.parseInt(Entrada.readLine());
-        int tercer
+        int inici = Integer.parseInt(Entrada.readLine());
+        int fi = Integer.parseInt(Entrada.readLine());
         
-        while ((inicial<= final && tercer>=final))
+        while (inici <= 16)
         System.out.println("Valor inicial?");
         
     
