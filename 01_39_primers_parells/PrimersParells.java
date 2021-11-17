@@ -6,9 +6,9 @@ public class PrimersParells {
     public static void main(String[] args) {
     
          int numero = 2;
-         int valor = 10;
+         //int valor = 10;
          
-         while ((numero%2) == 0) {     //condicio 
+         while (numero <=10) {     //condicio 
             System.out.println(numero);
             
             
