@@ -11,7 +11,7 @@ public class EntersIniciFi {
         int salt = Integer.parseInt(Entrada.readLine());
         
         System.out.println("Valor inicial?");
-        while (inici < 0) {
+        while (inici <= fi) {
     
     
         System.out.println("Valor final?");
