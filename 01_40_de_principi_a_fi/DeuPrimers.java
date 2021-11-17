@@ -1,5 +1,5 @@
 /*
-*
+* El programa escriu els 10 primers numeros naturals
 */
 
 public class DeuPrimers {
