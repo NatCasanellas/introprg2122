@@ -13,7 +13,7 @@ public class MostraInterval {
         for (valor = Integer.parseInt(Entrada.readLine());   //inici;
              valor <= fi;
              valor = valor + 1) {
-             System.out.println(valor);
+             System.out.println("inici?");
              
              }
     
