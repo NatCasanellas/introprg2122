@@ -6,18 +6,26 @@
 public class EntersIniciFi {
     public static void main(String[] args ){
     
+        System.out.println("inici?");
         int inici = Integer.parseInt(Entrada.readLine());
+            
+        System.out.println("final?");
         int fi = Integer.parseInt(Entrada.readLine());
-        int salt = Integer.parseInt(Entrada.readLine());
-        
-        System.out.println("Valor inicial?");
-        while (inici <= fi) {
-    
-    
-        System.out.println("Valor final?");
-        fi = inici + 3;
         
         System.out.println("Salt?");
-        }
+        int salt = Integer.parseInt(Entrada.readLine());
+        
+        
+        while (inici < fi) {
+               // if (inici = inici; inici <= fi; inici++) {
+                    System.out.println(inici);
+                }
+            } while (inici > fi) {
+               // for(int i = inici; i >= fi; i--) {
+                    System.out.println(i);  
+             
+            }
+        
+         } 
     }
 }
