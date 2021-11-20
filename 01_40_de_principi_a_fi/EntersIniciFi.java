@@ -17,7 +17,7 @@ public class EntersIniciFi {
         
         
         while (inici >= fi) {
-            System.out.println(salt);
+            System.out.println(inici + 3);
             salt= inici + 3;
             } 
          }    
