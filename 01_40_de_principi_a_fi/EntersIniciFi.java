@@ -16,16 +16,13 @@ public class EntersIniciFi {
         int salt = Integer.parseInt(Entrada.readLine());
         
         
-        while (inici < fi) {
+        while ((inici < fi && salt > 0)) {
                // if (inici = inici; inici <= fi; inici++) {
                     System.out.println(inici);
                 }
-            } while (inici > fi) {
+           // } while (inici > fi) {
                // for(int i = inici; i >= fi; i--) {
-                    System.out.println(i);  
+             //       System.out.println(i);  
              
-            }
-        
-         } 
-    }
+         }    
 }
