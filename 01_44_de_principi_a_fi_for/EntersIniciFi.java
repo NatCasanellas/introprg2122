@@ -6,10 +6,10 @@
 public class EntersIniciFi {
     public static void main(String[] args) {
         
-        System.out.println("inici?");
+        System.out.println("Valor inicial?");
         int inici = Integer.parseInt(Entrada.readLine());
             
-        System.out.println("final?");
+        System.out.println("Valor final?");
         int fi = Integer.parseInt(Entrada.readLine());
     
               if(inici < fi) {
