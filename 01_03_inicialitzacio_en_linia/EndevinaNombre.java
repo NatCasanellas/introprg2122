@@ -9,7 +9,6 @@
 
         public static void main(String[] args) {
 
-           // int numeroPensat;    // guardarà el número pensat
             int numero;         // guardarà els càlculs intermitjos
 
             // pensa un número
