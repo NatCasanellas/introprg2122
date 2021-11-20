@@ -6,24 +6,21 @@
 public class MostraInterval {
     public static void main(String[] args) {
     
-            int valor = Integer.parseInt(Entrada.readLine());
+            System.out.println("ini?");
+            int inici = Integer.parseInt(Entrada.readLine());
+            
+            System.out.println("final?");
             int fi = Integer.parseInt(Entrada.readLine());
     
-    
-        for (valor = Integer.parseInt(Entrada.readLine());   //inici;
-             valor <= fi;
-             valor = valor + 1) {
-             System.out.println("inici?");
+            if(inici < fi) {
+                for (inici = inici; inici <= fi; inici++) {
+                    System.out.println(inici);
+                }
+            } else if (inici > fi) {
+                for(int i = inici; i >= fi; i--) {
+                    System.out.println(i);  
              
-             }
-    
-    
-        for (valor = Integer.parseInt(Entrada.readLine());    //inici;
-             valor >= fi;
-             valor = valor -1) {
-             System.out.println(valor);
-             
-             }
-    }
-
+            }
+     }
+   }
 }
