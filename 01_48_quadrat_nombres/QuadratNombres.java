@@ -1,5 +1,6 @@
 /*
-*
+* El programa demana un enter positiu més gran que 0 i "dibuixa" un quadrat 
+* amb els nombres del 1 fins el valor de l'entrada.
 */
 
 public class QuadratNombres {
