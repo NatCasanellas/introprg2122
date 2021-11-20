@@ -6,7 +6,7 @@
 public class MostraInterval {
     public static void main(String[] args) {
     
-            System.out.println("ini?");
+            System.out.println("inici?");
             int inici = Integer.parseInt(Entrada.readLine());
             
             System.out.println("final?");
