@@ -12,6 +12,9 @@ public class EntersIniciFi {
         System.out.println("Valor final?");
         int fi = Integer.parseInt(Entrada.readLine());
     
+        System.out.println("Salt?");
+        int salt = Integer.parseInt(Entrada.readLine());
+        
               if(inici < fi) {
                 for (inici = inici; inici <= fi; inici++) {
                     System.out.println(inici);
