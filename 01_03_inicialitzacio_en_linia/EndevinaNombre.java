@@ -9,11 +9,11 @@
 
         public static void main(String[] args) {
 
-            int numeroPensat;    // guardarà el número pensat
+           // int numeroPensat;    // guardarà el número pensat
             int numero;         // guardarà els càlculs intermitjos
 
             // pensa un número
-            numeroPensat = Integer.parseInt(args[0]);
+            int numeroPensat = Integer.parseInt(args[0]);
             System.out.print("El número pensat és ");
             System.out.println(numeroPensat);
 
