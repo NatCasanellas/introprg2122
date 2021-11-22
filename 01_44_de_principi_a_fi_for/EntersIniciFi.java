@@ -15,15 +15,17 @@ public class EntersIniciFi {
         System.out.println("Salt?");
         int salt = Integer.parseInt(Entrada.readLine());
         
-              //if(inici < fi) {
-                for (inici = inici; inici <= fi; inici++) {
-                    System.out.println(inici);
-                }
-            //  } else if (inici > fi) {
-                   for(int i = inici; i >= fi; i--) {
-                     System.out.println(i);  
-             
-         }
+              
+           for (inici = inici; 
+                inici <= fi;
+                inici += salt) {
+                
+                System.out.println(inici); 
+              }
+            // inici <= fi) {
+           // System.out.println(inici);
+           // inici = inici + salt;
+         
     }
 
 }
