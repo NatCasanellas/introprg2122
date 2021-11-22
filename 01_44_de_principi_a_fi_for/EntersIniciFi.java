@@ -16,16 +16,11 @@ public class EntersIniciFi {
         int salt = Integer.parseInt(Entrada.readLine());
         
               
-           for (inici = inici; 
-                inici <= fi;
-                inici += salt) {
-                
+          for (inici = inici; //el inici per on comença
+               inici <= fi;   //condicio per entrar al bucle
+               inici += salt) { //el increment o decrement, en aquest cas increment
+                                // += esta incrementant, -= esta decrementant
                 System.out.println(inici); 
               }
-            // inici <= fi) {
-           // System.out.println(inici);
-           // inici = inici + salt;
-         
     }
-
 }
