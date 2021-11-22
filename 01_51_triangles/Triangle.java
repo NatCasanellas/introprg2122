@@ -6,10 +6,11 @@
 public class Triangle {
     public static void main(String[] args) {
     
-       //demana l'entrada   
-        int numTriangles = 1;
-       //dibuixa numTriangles
-        for (int t=1; t<=numTriangles; t++) {
+       //demana quants cops vols que ho fagi   
+        int numTriangles = Integer.parseInt(Entrada.readLine());
+        
+       //Declarem 1 es menos que el numero que em introduit que sumi
+        for (int t = 1; t <= numTriangles; t++) {
             //dibuixa el triangle
             for (int lin=0; lin<=9; lin++) {
             //dibuixa punts inicials            

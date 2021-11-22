@@ -17,7 +17,7 @@ public class QuadratNombres {
         }
              System.out.println();
       }
-    
+       if (fi 
     }
 
 }
