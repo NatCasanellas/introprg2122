@@ -6,7 +6,7 @@
 public class TrobaMaxim {
     public static void main(String[] args) {
     
-          int maxim = 1;
+          int maxim = 0;
           int valor = 0;
           
     //mentres el numero sigui >= 0 seguira preguntant al usuari el numero
@@ -17,7 +17,6 @@ public class TrobaMaxim {
    //quan aquest numero sigui negatiu, anira suman en 1 el numero total de  parells 
           if (maxim <= 0 && maxim >= 0) {
                   valor = valor - 1;
-          
             }
           }
  //quan el numero sigui negatiu, sortira del bucle i mostrara el maxim valor positiu       
