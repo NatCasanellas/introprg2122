@@ -11,8 +11,13 @@ public class TrobaMaxim {
           while (valor >= 0) {
              System.out.println("Introdueix un valor");
              valor = Integer.parseInt(Entrada.readLine());
-             if (valor >= 0) {
-                 maxim = maxim - valor;
+             
+             if (maxim <= 0 && maxim >= 0) {
+                  valor = valor - 1;
+             
+             
+             //if (valor >= 0) {
+               //  maxim = maxim - valor;
             }
         }
         System.out.println("El màxim és " + maxim);
