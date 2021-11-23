@@ -15,19 +15,19 @@ public class Triangle {
        
        //Declarem per quin numero comença y i acaba 9 al 0, afegim ..... linia 
             for (int lin = 9; lin >= 0; lin--) {
-                for (int puntI = 0; puntI < lin; puntI++){
+                for (int puntoI = 0; puntoI < lin; puntoI++){
                      System.out.println(".");
                 }
             //            
-            for (int numerosI = lin; numerosI < 10; numerosI++) {
+                for (int numerosI = lin; numerosI < 10; numerosI++) {
                 System.out.println(numerosI);
             }
             //
-            for (int numerosF = 8; numerosF >= lin; numerosF--) {
+                for (int numerosF = 8; numerosF >= lin; numerosF--) {
                 System.out.print(numerosF);
             }
             //Declarem per quin numero comença i acaba 9 al 0, afegim ....linia
-            for (int puntI = 0; puntI < lin; puntI++) {
+            for (int puntoI = 0; puntoI < lin; puntoI++) {
                 System.out.println(".");
             }
         System.out.println();
