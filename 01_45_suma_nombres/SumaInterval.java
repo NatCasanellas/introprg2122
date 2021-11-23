@@ -13,8 +13,8 @@ public class SumaInterval {
         int fi = Integer.parseInt(Entrada.readLine());
         
             for (inici = inici;
-                 inici <= fi;) {
-                 //fi >= inici) {
+                 inici <= fi;) 
+                 inici--) {
                  System.out.println(inici);
         
              
