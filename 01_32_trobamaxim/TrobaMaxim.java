@@ -20,6 +20,6 @@ public class TrobaMaxim {
             }
           }
  //quan el numero sigui negatiu, sortira del bucle i mostrara el maxim valor positiu       
-          System.out.println("El màxim és " + maxim);
+          System.out.println("El màxim és " + valor);
     }
 }
