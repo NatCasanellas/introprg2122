@@ -10,7 +10,7 @@ public class TrobaMaxim {
           int valor = 0;
           while (valor >= 0) {
              System.out.println("Introdueix un valor");
-             valor = Integer.parseInt(Entrada.readLine());
+             maxim = Integer.parseInt(Entrada.readLine());
              if (valor >= 0) {
                  maxim = maxim + valor;
             }
