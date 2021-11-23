@@ -6,22 +6,16 @@
 public class TrobaMaxim {
     public static void main(String[] args) {
     
-          System.out.println("Introdueix un valor");
-          int maxim = Integer.parseInt(Entrada.readLine());
+          int suma = 0;
           int valor = 0;
-          
-    //mentres el numero sigui >= 0 seguira preguntant al usuari el numero
-          while (maxim >= 0) {
-          //System.out.println("Introdueix un valor");
-          //maxim = Integer.parseInt(Entrada.readLine());
-          
-   //quan aquest numero sigui negatiu, anira suman en 1 el numero total de  parells 
-          if (valor <= 0) {
-                  //valor = valor - 1;
+          while (valor >= 0) {
+             System.out.println("Introdueix valor");
+             valor = Integer.parseInt(Entrada.readLine());
+             if (valor >= 0) {
+                 suma = suma + valor;
             }
-          }
- //quan el numero sigui negatiu, sortira del bucle i mostrara el maxim valor positiu       
-          System.out.println("El màxim és " + valor);
+        }
+        System.out.println("La suma és " + suma);
     }
 }
 
