@@ -21,6 +21,6 @@ public class MostraInterval {
                     System.out.println(i);  
              
             }
-     }
-   }
+        }
+    }
 }
