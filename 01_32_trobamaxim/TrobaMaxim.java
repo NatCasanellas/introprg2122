@@ -12,12 +12,12 @@ public class TrobaMaxim {
              System.out.println("Introdueix un valor");
              maxim = Integer.parseInt(Entrada.readLine());
              
-             //if (maxim <= 0 && maxim >= 0) {
-                  //valor = valor - 1;
+             if (maxim <= 0 && maxim >= 0) {
+                  valor = valor - 1;
              
              
-             if (valor >= 0) {
-                maxim = maxim - valor;
+            // if (valor >= 0) {
+              //  maxim = maxim - valor;
             }
         }
         System.out.println("El màxim és " + maxim);
