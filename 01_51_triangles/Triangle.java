@@ -14,7 +14,7 @@ public class Triangle {
         for (int t = 1; t <= numTriangles; t++) {
        
        //Declarem per quin numero comença y i acaba 9 al 0, afegim ..... linia 
-            for (int lin = 9; lin <= 0; lin--) {
+            for (int lin = 9; lin >= 0; lin--) {
                 for (int puntI = 0; puntI < lin; puntI++){
                      System.out.println(".");
                 }
