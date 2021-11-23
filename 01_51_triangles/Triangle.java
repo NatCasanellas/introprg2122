@@ -28,7 +28,7 @@ public class Triangle {
             }
             //Declarem per quin numero comença i acaba 9 al 0, afegim ....linia
             for (int puntoI = 0; puntoI < lin; puntoI++) {
-                System.out.println(".");
+                System.out.println("9");
             }
         System.out.println();
       } 
