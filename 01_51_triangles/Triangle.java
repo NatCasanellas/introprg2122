@@ -11,20 +11,26 @@ public class Triangle {
         
        //Declarem 1 es menos que el numero que em introduit que sumi
         for (int t = 1; t <= numTriangles; t++) {
-            //dibuixa el triangle
-            for (int lin=0; lin<=9; lin++) {
-            //dibuixa punts inicials            
-            for (int col = 1; col <=(9-lin); col++) {
+       
+       //Declarem per quin numero comença y i acaba 9 al 0, afegim ..... linia 
+            for (int lin = 9; lin <= 0; lin--) {
+                for (int puntI = 0; puntI < lin; puntI++){
+                     System.out.println(".");
+                }
+            //            
+            for (int numerosI = lin; numerosI < 10; numerosI++) {
+                System.out.println(numerosI);
+            }
+            //
+            for (int numerosF = 8; numerosF >= lin; numerosF--) {
+                System.out.print(numerosF);
+            }
+            //Declarem per quin numero comença i acaba 9 al 0, afegim ....linia
+            for (int puntI = 0; puntI < lin; puntI++){
                 System.out.println(".");
             }
-            //dibuixa num incr
-            for (int col =(9 - lin); col <= 9; col++) {
-                System.out.print(col);
-            //dibuixa 9
-            System.out.println("9");
-            }
         System.out.println();
-        } 
+      } 
     }
   }
 }
