@@ -11,13 +11,13 @@ public class QuadratNombres {
     
          
     
-        for (int linia=1; linia <= 5; linia++) {
-        for (int columna=1; columna <= 5; columna++) {
+        for (int linia = 1; linia <= 5; linia++) {
+        for (int columna = 1; columna <= 5; columna++) {
              System.out.print(" " + columna);
         }
              System.out.println();
       }
-       if (fi 
+       //if (fi 
     }
 
 }
