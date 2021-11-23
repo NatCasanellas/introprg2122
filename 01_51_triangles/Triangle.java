@@ -6,7 +6,8 @@
 public class Triangle {
     public static void main(String[] args) {
     
-       //demana quants cops vols que ho fagi   
+       //demana quants cops vols que ho fagi  
+        System.out.println("quants?"); 
         int numTriangles = Integer.parseInt(Entrada.readLine());
         
        //Declarem 1 es menos que el numero que em introduit que sumi
