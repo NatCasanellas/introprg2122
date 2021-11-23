@@ -13,7 +13,7 @@ public class MostraInterval {
             int fi = Integer.parseInt(Entrada.readLine());
     
             if (inici < fi) {
-                for (inici = inici; inici <= fi; inici--) {
+                for (inici = inici; inici <= fi; inici++) {
                     System.out.println(inici);
                 }
             } else if (inici > fi) {
