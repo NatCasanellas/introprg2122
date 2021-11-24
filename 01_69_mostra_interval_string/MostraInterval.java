@@ -34,12 +34,12 @@ public class MostraInterval {
                 end = 0;
             }
             if (end < 0) {
-            
+                end = 0;
             }
     
-            if (start<= end && !skip) {
-                    for (int s = start; s <= end; s++){
-                        if (s<= text.length() - 1) {
+            if (start <= end && !skip) {
+                    for (int s = start; s <= end; s++) {
+                        if (s <= text.length() - 1) {
                         System.out.println(text.charAt(s));
                     }
                 }
